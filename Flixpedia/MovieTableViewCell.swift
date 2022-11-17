@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieTableViewCell: UITableViewCell {
     
@@ -28,16 +29,7 @@ class MovieTableViewCell: UITableViewCell {
         txtTitle.text = data.originalTitle
         txtDesc.text = data.overview
         
-        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://image.tmdb.org/t/p/w342/\(data.posterPath)")!)) { data, res, error in
-            
-            do {
-                var datas = try data
-                DispatchQueue.main.async {
-                    self.imgCover.image = UIImage(data: datas!)
-                }
-            } catch {
-                print("error")
-            }
-        }.resume()
+        imgCover.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w342/\(data.posterPath)")!)
+        
     }
 }

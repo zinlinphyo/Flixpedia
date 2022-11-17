@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
@@ -15,22 +16,29 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         movieTableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "movieCell")
         
-        URLSession.shared.dataTask(with: URLRequest(url: URL(string: "https://api.themoviedb.org/3/movie/upcoming?api_key=9f04c49e56282d595c3ac1fa31ea742d")!)) { data, res, error in
+        AF.request("https://api.themoviedb.org/3/movie/upcoming?api_key=9f04c49e56282d595c3ac1fa31ea742d").responseJSON { response in
             
-            do {
-                let result = try JSONDecoder().decode(MovieListResponse.self, from: data!)
-                DispatchQueue.main.async {
-                    self.dataList = result.results
-                    self.movieTableView.reloadData()
+            switch response.result {
+            case .success:
+                guard let value = response.data else { return }
+                do {
+                    let result = try JSONDecoder().decode(MovieListResponse.self, from: value)
+                    DispatchQueue.main.async {
+                        self.dataList = result.results
+                        self.movieTableView.reloadData()
+                    }
+                } catch {
+                    print("error")
                 }
-            } catch {
-                print("error")
+
+            case .failure(let error):
+                print(error.localizedDescription)
             }
-        }.resume()
+        }
+        
     }
 
 }

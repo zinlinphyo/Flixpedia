@@ -6,6 +6,8 @@ target 'Flixpedia' do
   use_frameworks!
 
   # Pods for Flixpedia
+  pod 'Alamofire'
+  pod 'Kingfisher', '~> 7.0'
 
   target 'FlixpediaTests' do
     inherit! :search_paths
