@@ -6,8 +6,11 @@ target 'Flixpedia' do
   use_frameworks!
 
   # Pods for Flixpedia
+  pod 'SwiftyJSON', '~> 4.0'
   pod 'Alamofire'
   pod 'Kingfisher', '~> 7.0'
+  pod 'SnapKit', '~> 5.6.0'
+  pod 'ViewAnimator'
 
   target 'FlixpediaTests' do
     inherit! :search_paths

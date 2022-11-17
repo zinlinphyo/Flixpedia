@@ -7,12 +7,15 @@
 
 import UIKit
 import Alamofire
+import ViewAnimator
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var movieTableView: UITableView!
     
     var dataList = [Movie]()
+    
+    private let animations = [AnimationType.vector(CGVector(dx: 0, dy: 50))]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,7 @@ class ViewController: UIViewController {
                     DispatchQueue.main.async {
                         self.dataList = result.results
                         self.movieTableView.reloadData()
+                        UIView.animate(views: self.movieTableView.visibleCells, animations: self.animations, completion: {})
                     }
                 } catch {
                     print("error")
@@ -40,10 +44,19 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    // MARK: - Navigation
+    private func goToMovieDetails(index: Int) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as! MovieDetailsViewController
+        vc.item = dataList[index]
+        self.navigationController?.present(vc, animated: true, completion: nil)
+    }
 
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
@@ -56,5 +69,7 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.goToMovieDetails(index: indexPath.row)
+    }
 }

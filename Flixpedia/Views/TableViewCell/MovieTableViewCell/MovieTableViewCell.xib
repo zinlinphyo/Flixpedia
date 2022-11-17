@@ -12,12 +12,12 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="163" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="Flixpedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="013-aT-Ksx">
-                        <rect key="frame" x="160" y="16" width="144" height="24"/>
+                        <rect key="frame" x="132" y="16" width="172" height="24"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="uFG-CS-ajs"/>
                         </constraints>
@@ -26,7 +26,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Gl-3Zg">
-                        <rect key="frame" x="160" y="56" width="128" height="80"/>
+                        <rect key="frame" x="132" y="48" width="156" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="UKh-Yt-Jl7"/>
                         </constraints>
@@ -34,20 +34,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-eA-p12">
-                        <rect key="frame" x="16" y="16" width="128" height="131"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-eA-p12">
+                        <rect key="frame" x="16" y="16" width="100" height="131"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="F3B-Sh-iLQ"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="top" secondItem="013-aT-Ksx" secondAttribute="bottom" constant="16" id="5mO-JA-e8A"/>
+                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="top" secondItem="013-aT-Ksx" secondAttribute="bottom" constant="8" id="5mO-JA-e8A"/>
                     <constraint firstAttribute="bottom" secondItem="7Th-eA-p12" secondAttribute="bottom" constant="16" id="H77-Lp-dpr"/>
                     <constraint firstItem="013-aT-Ksx" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="JId-fI-yF1"/>
                     <constraint firstItem="7Th-eA-p12" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="TlL-gQ-Uav"/>
                     <constraint firstItem="TlB-Gl-3Zg" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="Z4d-mZ-UPk"/>
                     <constraint firstItem="7Th-eA-p12" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="d42-DH-Cht"/>
                     <constraint firstAttribute="trailing" secondItem="013-aT-Ksx" secondAttribute="trailing" constant="16" id="gI6-5r-EZ2"/>
-                    <constraint firstAttribute="centerX" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="gil-8H-cdt"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="TlB-Gl-3Zg" secondAttribute="bottom" constant="16" id="lin-tx-h8J"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TlB-Gl-3Zg" secondAttribute="bottom" constant="8" id="lin-tx-h8J"/>
                     <constraint firstItem="013-aT-Ksx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="syw-jd-4EA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="TlB-Gl-3Zg" secondAttribute="trailing" constant="16" id="ziX-EK-Aft"/>
                 </constraints>
