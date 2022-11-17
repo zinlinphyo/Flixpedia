@@ -17,6 +17,9 @@
 		11ADD8F42925F6AB003FEBA3 /* FlixpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8F32925F6AB003FEBA3 /* FlixpediaTests.swift */; };
 		11ADD8FE2925F6AB003FEBA3 /* FlixpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8FD2925F6AB003FEBA3 /* FlixpediaUITests.swift */; };
 		11ADD9002925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8FF2925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift */; };
+		2B1416C536962B43B742EE43 /* Pods_Flixpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54F0F30958F2ABD949B43B /* Pods_Flixpedia.framework */; };
+		E2FF7DB888C59C50D7DD1FF3 /* Pods_Flixpedia_FlixpediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331D81848C6972FD01BBC1B4 /* Pods_Flixpedia_FlixpediaUITests.framework */; };
+		E9779D77A9B9DC03818AA3CA /* Pods_FlixpediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F96F03191F903E4964B3E9 /* Pods_FlixpediaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		11ADD8F92925F6AB003FEBA3 /* FlixpediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixpediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ADD8FD2925F6AB003FEBA3 /* FlixpediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixpediaUITests.swift; sourceTree = "<group>"; };
 		11ADD8FF2925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixpediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D077AC8C163A13520A48941 /* Pods-FlixpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixpediaTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		331D81848C6972FD01BBC1B4 /* Pods_Flixpedia_FlixpediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixpedia_FlixpediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69F96F03191F903E4964B3E9 /* Pods_FlixpediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixpediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ACE4B505951184F1BD5CC39 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixpedia-FlixpediaUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A3F2144B468D222D7CBC8552 /* Pods-Flixpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixpedia.release.xcconfig"; path = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia.release.xcconfig"; sourceTree = "<group>"; };
+		B11245DC5026D4BA4387760E /* Pods-Flixpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixpedia.debug.xcconfig"; path = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFD077DB48AB66471C5CC16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixpedia-FlixpediaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F97E2C0FBF048D7F8939BB5D /* Pods-FlixpediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixpediaTests.release.xcconfig"; path = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD54F0F30958F2ABD949B43B /* Pods_Flixpedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixpedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1416C536962B43B742EE43 /* Pods_Flixpedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9779D77A9B9DC03818AA3CA /* Pods_FlixpediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FF7DB888C59C50D7DD1FF3 /* Pods_Flixpedia_FlixpediaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				11ADD8F22925F6AB003FEBA3 /* FlixpediaTests */,
 				11ADD8FC2925F6AB003FEBA3 /* FlixpediaUITests */,
 				11ADD8D72925F6A7003FEBA3 /* Products */,
+				8F1C4660FB8FA141FEB8B930 /* Pods */,
+				A52EBD3959C5269DD8E6997A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,29 @@
 			path = FlixpediaUITests;
 			sourceTree = "<group>";
 		};
+		8F1C4660FB8FA141FEB8B930 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B11245DC5026D4BA4387760E /* Pods-Flixpedia.debug.xcconfig */,
+				A3F2144B468D222D7CBC8552 /* Pods-Flixpedia.release.xcconfig */,
+				CCFD077DB48AB66471C5CC16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */,
+				6ACE4B505951184F1BD5CC39 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */,
+				1D077AC8C163A13520A48941 /* Pods-FlixpediaTests.debug.xcconfig */,
+				F97E2C0FBF048D7F8939BB5D /* Pods-FlixpediaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A52EBD3959C5269DD8E6997A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD54F0F30958F2ABD949B43B /* Pods_Flixpedia.framework */,
+				331D81848C6972FD01BBC1B4 /* Pods_Flixpedia_FlixpediaUITests.framework */,
+				69F96F03191F903E4964B3E9 /* Pods_FlixpediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ADD9032925F6AB003FEBA3 /* Build configuration list for PBXNativeTarget "Flixpedia" */;
 			buildPhases = (
+				CCC61F084F2F4650BD913AE4 /* [CP] Check Pods Manifest.lock */,
 				11ADD8D22925F6A7003FEBA3 /* Sources */,
 				11ADD8D32925F6A7003FEBA3 /* Frameworks */,
 				11ADD8D42925F6A7003FEBA3 /* Resources */,
@@ -154,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ADD9062925F6AB003FEBA3 /* Build configuration list for PBXNativeTarget "FlixpediaTests" */;
 			buildPhases = (
+				6FC9C06AD157DDEC3BDFE282 /* [CP] Check Pods Manifest.lock */,
 				11ADD8EB2925F6AB003FEBA3 /* Sources */,
 				11ADD8EC2925F6AB003FEBA3 /* Frameworks */,
 				11ADD8ED2925F6AB003FEBA3 /* Resources */,
@@ -172,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11ADD9092925F6AB003FEBA3 /* Build configuration list for PBXNativeTarget "FlixpediaUITests" */;
 			buildPhases = (
+				0F6DFF9A6843795789C78ABB /* [CP] Check Pods Manifest.lock */,
 				11ADD8F52925F6AB003FEBA3 /* Sources */,
 				11ADD8F62925F6AB003FEBA3 /* Frameworks */,
 				11ADD8F72925F6AB003FEBA3 /* Resources */,
@@ -255,6 +298,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F6DFF9A6843795789C78ABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flixpedia-FlixpediaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC9C06AD157DDEC3BDFE282 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlixpediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC61F084F2F4650BD913AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flixpedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11ADD8D22925F6A7003FEBA3 /* Sources */ = {
@@ -438,6 +550,7 @@
 		};
 		11ADD9042925F6AB003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11245DC5026D4BA4387760E /* Pods-Flixpedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,8 +568,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Zin-Lin-Phyo.Flixpedia";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.zinlinphyo.flixpedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -466,6 +579,7 @@
 		};
 		11ADD9052925F6AB003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3F2144B468D222D7CBC8552 /* Pods-Flixpedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,8 +597,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Zin-Lin-Phyo.Flixpedia";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.zinlinphyo.flixpedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -494,6 +608,7 @@
 		};
 		11ADD9072925F6AB003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D077AC8C163A13520A48941 /* Pods-FlixpediaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +634,7 @@
 		};
 		11ADD9082925F6AB003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97E2C0FBF048D7F8939BB5D /* Pods-FlixpediaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +660,7 @@
 		};
 		11ADD90A2925F6AB003FEBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFD077DB48AB66471C5CC16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -567,6 +684,7 @@
 		};
 		11ADD90B2925F6AB003FEBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ACE4B505951184F1BD5CC39 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

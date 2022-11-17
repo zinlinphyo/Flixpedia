@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A6A503FBCB6A86323873C94489A3237 /* Pods-FlixpediaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 095E6DE0984ECCC24E51C6EFAD6C3CBC /* Pods-FlixpediaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AE520E74BA6B2FFE931782CC177E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2ED8B2C9F58B71ACF6DC5D124D4B8750 /* Pods-Flixpedia-FlixpediaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C81B80934B5FA0FC90ABFAAA16971947 /* Pods-Flixpedia-FlixpediaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75A90AF5051C0F3398A08C0F177AF67 /* Pods-Flixpedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 077CF2FE0BAE4746260A5089031BCEBE /* Pods-Flixpedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75F46F46072745AE9A1E69B81BC5933 /* Pods-Flixpedia-FlixpediaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA0E26C67192D5A98AE936FD41AA13F /* Pods-Flixpedia-FlixpediaUITests-dummy.m */; };
+		BA39F977653D031DA64FF3A5A4FBBACF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BC1721B560C2E5DE87084C93F1B33AEF /* Pods-FlixpediaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF4D06ABA7790C4A5EE58392D3FEB68 /* Pods-FlixpediaTests-dummy.m */; };
+		CA1116BB737F32C732351FBB09F906C8 /* Pods-Flixpedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E077ECDBE81F351E194AED40FF71435A /* Pods-Flixpedia-dummy.m */; };
+		D6EBEA5C3E2FA95566FDBEB35DA7F1AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCCE8BB0794A4486ADA34DC49BBFA16F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5957EB5A5B67A4972EB14D00B77CA326;
+			remoteInfo = "Pods-Flixpedia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03826A9D13761949C1642E506D88763C /* Pods-Flixpedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Flixpedia.modulemap"; sourceTree = "<group>"; };
+		077CF2FE0BAE4746260A5089031BCEBE /* Pods-Flixpedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Flixpedia-umbrella.h"; sourceTree = "<group>"; };
+		095E6DE0984ECCC24E51C6EFAD6C3CBC /* Pods-FlixpediaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlixpediaTests-umbrella.h"; sourceTree = "<group>"; };
+		0FF4D06ABA7790C4A5EE58392D3FEB68 /* Pods-FlixpediaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlixpediaTests-dummy.m"; sourceTree = "<group>"; };
+		22980482C461E8311ABF8EF9CE9CC796 /* Pods-Flixpedia-FlixpediaUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Flixpedia-FlixpediaUITests"; path = Pods_Flixpedia_FlixpediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C2DAE7CBE1E1CB52A3459A23FDB10E /* Pods-FlixpediaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlixpediaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		360DB5AD3E6D1421ACD570953F554C16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flixpedia-FlixpediaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E4C47B3EF5DBAE5385E52AE63A13D1A /* Pods-Flixpedia-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Flixpedia-Info.plist"; sourceTree = "<group>"; };
+		3EA0E26C67192D5A98AE936FD41AA13F /* Pods-Flixpedia-FlixpediaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Flixpedia-FlixpediaUITests-dummy.m"; sourceTree = "<group>"; };
+		443CD243548AED17BFDA33E89195AA39 /* Pods-Flixpedia-FlixpediaUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Flixpedia-FlixpediaUITests-Info.plist"; sourceTree = "<group>"; };
+		47C1449B96AE3C5D9C3F6BEFEB746E24 /* Pods-FlixpediaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlixpediaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F451720F11633D49E1C83DE7F6E7A21 /* Pods-Flixpedia-FlixpediaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Flixpedia-FlixpediaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DC41560BC7DDC2DA28F7F003297D46C /* Pods-Flixpedia-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Flixpedia-acknowledgements.plist"; sourceTree = "<group>"; };
+		62B7A57A50AE3D1B5538A121A12D1B97 /* Pods-FlixpediaTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlixpediaTests"; path = Pods_FlixpediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D0290BBB5661723A8482312147F7D8 /* Pods-Flixpedia-FlixpediaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Flixpedia-FlixpediaUITests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AD8495F5DFF9BA98D68C9B9F6652435 /* Pods-FlixpediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlixpediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C6EA266410DEA0405286D24E114C9F8 /* Pods-FlixpediaTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlixpediaTests-Info.plist"; sourceTree = "<group>"; };
+		7D9334B0ED70BFB526A5AE55C44E7B8B /* Pods-Flixpedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flixpedia.release.xcconfig"; sourceTree = "<group>"; };
+		879CB21E365D4B8074DA0EF9699C0998 /* Pods-Flixpedia-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Flixpedia-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B98234F6C8CD307F80BFC6A78B55B3C0 /* Pods-FlixpediaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlixpediaTests.modulemap"; sourceTree = "<group>"; };
+		C81B80934B5FA0FC90ABFAAA16971947 /* Pods-Flixpedia-FlixpediaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Flixpedia-FlixpediaUITests-umbrella.h"; sourceTree = "<group>"; };
+		CF860757A05B515A3EFF32C6A1C7F2AA /* Pods-Flixpedia-FlixpediaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Flixpedia-FlixpediaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2D12EEE1FAF23D0ACAE7EAA814BF7C8 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flixpedia-FlixpediaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D97027E552533458C461084E6E674B98 /* Pods-Flixpedia */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Flixpedia"; path = Pods_Flixpedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E077ECDBE81F351E194AED40FF71435A /* Pods-Flixpedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Flixpedia-dummy.m"; sourceTree = "<group>"; };
+		F6E2B721D7193A293FAE731F6036B128 /* Pods-FlixpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlixpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0B2B9C0744C883347CC24E5F744C9C /* Pods-Flixpedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Flixpedia.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F8AE160D3055871D36B31C45BE5FED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA39F977653D031DA64FF3A5A4FBBACF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97783CFA1AFD7133666155AEB23B4C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EBEA5C3E2FA95566FDBEB35DA7F1AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7039D891B3B551D7FA87EF1671912E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE520E74BA6B2FFE931782CC177E49B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41675078C659D6CE975107B321C1C465 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FB89271D874F5EE13879BA457EDE129 /* Pods-Flixpedia */,
+				9A8BB9F2AAA9BA5B80EB995F39E697D9 /* Pods-Flixpedia-FlixpediaUITests */,
+				99511EFCAE9A11CAFEDDD4BFDE1A9D6D /* Pods-FlixpediaTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E1A130A736F5A0BADDA093DB95F4D01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D97027E552533458C461084E6E674B98 /* Pods-Flixpedia */,
+				22980482C461E8311ABF8EF9CE9CC796 /* Pods-Flixpedia-FlixpediaUITests */,
+				62B7A57A50AE3D1B5538A121A12D1B97 /* Pods-FlixpediaTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB89271D874F5EE13879BA457EDE129 /* Pods-Flixpedia */ = {
+			isa = PBXGroup;
+			children = (
+				03826A9D13761949C1642E506D88763C /* Pods-Flixpedia.modulemap */,
+				879CB21E365D4B8074DA0EF9699C0998 /* Pods-Flixpedia-acknowledgements.markdown */,
+				5DC41560BC7DDC2DA28F7F003297D46C /* Pods-Flixpedia-acknowledgements.plist */,
+				E077ECDBE81F351E194AED40FF71435A /* Pods-Flixpedia-dummy.m */,
+				3E4C47B3EF5DBAE5385E52AE63A13D1A /* Pods-Flixpedia-Info.plist */,
+				077CF2FE0BAE4746260A5089031BCEBE /* Pods-Flixpedia-umbrella.h */,
+				FA0B2B9C0744C883347CC24E5F744C9C /* Pods-Flixpedia.debug.xcconfig */,
+				7D9334B0ED70BFB526A5AE55C44E7B8B /* Pods-Flixpedia.release.xcconfig */,
+			);
+			name = "Pods-Flixpedia";
+			path = "Target Support Files/Pods-Flixpedia";
+			sourceTree = "<group>";
+		};
+		99511EFCAE9A11CAFEDDD4BFDE1A9D6D /* Pods-FlixpediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98234F6C8CD307F80BFC6A78B55B3C0 /* Pods-FlixpediaTests.modulemap */,
+				31C2DAE7CBE1E1CB52A3459A23FDB10E /* Pods-FlixpediaTests-acknowledgements.markdown */,
+				47C1449B96AE3C5D9C3F6BEFEB746E24 /* Pods-FlixpediaTests-acknowledgements.plist */,
+				0FF4D06ABA7790C4A5EE58392D3FEB68 /* Pods-FlixpediaTests-dummy.m */,
+				7C6EA266410DEA0405286D24E114C9F8 /* Pods-FlixpediaTests-Info.plist */,
+				095E6DE0984ECCC24E51C6EFAD6C3CBC /* Pods-FlixpediaTests-umbrella.h */,
+				F6E2B721D7193A293FAE731F6036B128 /* Pods-FlixpediaTests.debug.xcconfig */,
+				7AD8495F5DFF9BA98D68C9B9F6652435 /* Pods-FlixpediaTests.release.xcconfig */,
+			);
+			name = "Pods-FlixpediaTests";
+			path = "Target Support Files/Pods-FlixpediaTests";
+			sourceTree = "<group>";
+		};
+		9A8BB9F2AAA9BA5B80EB995F39E697D9 /* Pods-Flixpedia-FlixpediaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70D0290BBB5661723A8482312147F7D8 /* Pods-Flixpedia-FlixpediaUITests.modulemap */,
+				4F451720F11633D49E1C83DE7F6E7A21 /* Pods-Flixpedia-FlixpediaUITests-acknowledgements.markdown */,
+				CF860757A05B515A3EFF32C6A1C7F2AA /* Pods-Flixpedia-FlixpediaUITests-acknowledgements.plist */,
+				3EA0E26C67192D5A98AE936FD41AA13F /* Pods-Flixpedia-FlixpediaUITests-dummy.m */,
+				443CD243548AED17BFDA33E89195AA39 /* Pods-Flixpedia-FlixpediaUITests-Info.plist */,
+				C81B80934B5FA0FC90ABFAAA16971947 /* Pods-Flixpedia-FlixpediaUITests-umbrella.h */,
+				360DB5AD3E6D1421ACD570953F554C16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */,
+				D2D12EEE1FAF23D0ACAE7EAA814BF7C8 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */,
+			);
+			name = "Pods-Flixpedia-FlixpediaUITests";
+			path = "Target Support Files/Pods-Flixpedia-FlixpediaUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5E1A130A736F5A0BADDA093DB95F4D01 /* Products */,
+				41675078C659D6CE975107B321C1C465 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2CD2BA3D83F0A8F4ADA848D52D5F0413 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75A90AF5051C0F3398A08C0F177AF67 /* Pods-Flixpedia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77019AD09A91A7FEDB07EAC9D6401AA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED8B2C9F58B71ACF6DC5D124D4B8750 /* Pods-Flixpedia-FlixpediaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E14A7F4955BF6544BCA960AD808237 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6A503FBCB6A86323873C94489A3237 /* Pods-FlixpediaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5957EB5A5B67A4972EB14D00B77CA326 /* Pods-Flixpedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A23476B55E4F0E869D314B2EA59BA20 /* Build configuration list for PBXNativeTarget "Pods-Flixpedia" */;
+			buildPhases = (
+				2CD2BA3D83F0A8F4ADA848D52D5F0413 /* Headers */,
+				4CAA7DDA3CEBE5108B4C977FF8DC7EBE /* Sources */,
+				97783CFA1AFD7133666155AEB23B4C4F /* Frameworks */,
+				07EFE1F148604E58B449E690D03B4E7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Flixpedia";
+			productName = Pods_Flixpedia;
+			productReference = D97027E552533458C461084E6E674B98 /* Pods-Flixpedia */;
+			productType = "com.apple.product-type.framework";
+		};
+		C76898ED7E350265EDBD794D368EEE9E /* Pods-FlixpediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 531CBC374B2E1A448D49186900EBD4F7 /* Build configuration list for PBXNativeTarget "Pods-FlixpediaTests" */;
+			buildPhases = (
+				C1E14A7F4955BF6544BCA960AD808237 /* Headers */,
+				50F6D30F87552A0C613F2704911063F8 /* Sources */,
+				EA7039D891B3B551D7FA87EF1671912E /* Frameworks */,
+				86BCDCBA52CFD0391622EFCD0030F17B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50D316763281761EA48EE1F47C4B4F2D /* PBXTargetDependency */,
+			);
+			name = "Pods-FlixpediaTests";
+			productName = Pods_FlixpediaTests;
+			productReference = 62B7A57A50AE3D1B5538A121A12D1B97 /* Pods-FlixpediaTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2870E73C01975808DCB7B92AE484E78 /* Pods-Flixpedia-FlixpediaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664184845CA7D4AB5CA592942F41FCC7 /* Build configuration list for PBXNativeTarget "Pods-Flixpedia-FlixpediaUITests" */;
+			buildPhases = (
+				77019AD09A91A7FEDB07EAC9D6401AA5 /* Headers */,
+				A996539E6E9F8D8146AEEBBE1BE997A2 /* Sources */,
+				6F8AE160D3055871D36B31C45BE5FED2 /* Frameworks */,
+				135012EB3E0A6523BA923685E6365502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Flixpedia-FlixpediaUITests";
+			productName = Pods_Flixpedia_FlixpediaUITests;
+			productReference = 22980482C461E8311ABF8EF9CE9CC796 /* Pods-Flixpedia-FlixpediaUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5E1A130A736F5A0BADDA093DB95F4D01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5957EB5A5B67A4972EB14D00B77CA326 /* Pods-Flixpedia */,
+				E2870E73C01975808DCB7B92AE484E78 /* Pods-Flixpedia-FlixpediaUITests */,
+				C76898ED7E350265EDBD794D368EEE9E /* Pods-FlixpediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07EFE1F148604E58B449E690D03B4E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		135012EB3E0A6523BA923685E6365502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BCDCBA52CFD0391622EFCD0030F17B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CAA7DDA3CEBE5108B4C977FF8DC7EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1116BB737F32C732351FBB09F906C8 /* Pods-Flixpedia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50F6D30F87552A0C613F2704911063F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1721B560C2E5DE87084C93F1B33AEF /* Pods-FlixpediaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A996539E6E9F8D8146AEEBBE1BE997A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75F46F46072745AE9A1E69B81BC5933 /* Pods-Flixpedia-FlixpediaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50D316763281761EA48EE1F47C4B4F2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Flixpedia";
+			target = 5957EB5A5B67A4972EB14D00B77CA326 /* Pods-Flixpedia */;
+			targetProxy = FCCE8BB0794A4486ADA34DC49BBFA16F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		075F7DE888DCF6DA417C8AE4D85FF6B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD8495F5DFF9BA98D68C9B9F6652435 /* Pods-FlixpediaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F4191FA14AFA92CB2C34817FFBD460E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9334B0ED70BFB526A5AE55C44E7B8B /* Pods-Flixpedia.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D8A640658722B2FD3B2C60F3B9E4115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D12EEE1FAF23D0ACAE7EAA814BF7C8 /* Pods-Flixpedia-FlixpediaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9407F0759C4CE76C636F7FAE99ED1787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0B2B9C0744C883347CC24E5F744C9C /* Pods-Flixpedia.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flixpedia/Pods-Flixpedia.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AC94EE1BEB06629A44E2753AD88D1E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360DB5AD3E6D1421ACD570953F554C16 /* Pods-Flixpedia-FlixpediaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Flixpedia-FlixpediaUITests/Pods-Flixpedia-FlixpediaUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB07619A0E8E9D1D548B719471B81626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6E2B721D7193A293FAE731F6036B128 /* Pods-FlixpediaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A23476B55E4F0E869D314B2EA59BA20 /* Build configuration list for PBXNativeTarget "Pods-Flixpedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9407F0759C4CE76C636F7FAE99ED1787 /* Debug */,
+				1F4191FA14AFA92CB2C34817FFBD460E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		531CBC374B2E1A448D49186900EBD4F7 /* Build configuration list for PBXNativeTarget "Pods-FlixpediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB07619A0E8E9D1D548B719471B81626 /* Debug */,
+				075F7DE888DCF6DA417C8AE4D85FF6B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664184845CA7D4AB5CA592942F41FCC7 /* Build configuration list for PBXNativeTarget "Pods-Flixpedia-FlixpediaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC94EE1BEB06629A44E2753AD88D1E83 /* Debug */,
+				6D8A640658722B2FD3B2C60F3B9E4115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
