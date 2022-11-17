@@ -17,6 +17,10 @@
 		11ADD8F42925F6AB003FEBA3 /* FlixpediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8F32925F6AB003FEBA3 /* FlixpediaTests.swift */; };
 		11ADD8FE2925F6AB003FEBA3 /* FlixpediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8FD2925F6AB003FEBA3 /* FlixpediaUITests.swift */; };
 		11ADD9002925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD8FF2925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift */; };
+		11ADD90F29260562003FEBA3 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADD90E29260562003FEBA3 /* AppConstants.swift */; };
+		11B9F98129263FC700C65F6E /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B9F98029263FC700C65F6E /* MovieListResponse.swift */; };
+		11B9F984292643F200C65F6E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B9F982292643F200C65F6E /* MovieTableViewCell.swift */; };
+		11B9F985292643F200C65F6E /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B9F983292643F200C65F6E /* MovieTableViewCell.xib */; };
 		2B1416C536962B43B742EE43 /* Pods_Flixpedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD54F0F30958F2ABD949B43B /* Pods_Flixpedia.framework */; };
 		E2FF7DB888C59C50D7DD1FF3 /* Pods_Flixpedia_FlixpediaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331D81848C6972FD01BBC1B4 /* Pods_Flixpedia_FlixpediaUITests.framework */; };
 		E9779D77A9B9DC03818AA3CA /* Pods_FlixpediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F96F03191F903E4964B3E9 /* Pods_FlixpediaTests.framework */; };
@@ -54,6 +58,11 @@
 		11ADD8F92925F6AB003FEBA3 /* FlixpediaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlixpediaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ADD8FD2925F6AB003FEBA3 /* FlixpediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixpediaUITests.swift; sourceTree = "<group>"; };
 		11ADD8FF2925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlixpediaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		11ADD90D2925F7B5003FEBA3 /* Flixpedia.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Flixpedia.xcconfig; sourceTree = "<group>"; };
+		11ADD90E29260562003FEBA3 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		11B9F98029263FC700C65F6E /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		11B9F982292643F200C65F6E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		11B9F983292643F200C65F6E /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
 		1D077AC8C163A13520A48941 /* Pods-FlixpediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlixpediaTests.debug.xcconfig"; path = "Target Support Files/Pods-FlixpediaTests/Pods-FlixpediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		331D81848C6972FD01BBC1B4 /* Pods_Flixpedia_FlixpediaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixpedia_FlixpediaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F96F03191F903E4964B3E9 /* Pods_FlixpediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixpediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +127,8 @@
 		11ADD8D82925F6A7003FEBA3 /* Flixpedia */ = {
 			isa = PBXGroup;
 			children = (
+				11B9F97E29263F9F00C65F6E /* Data */,
+				11ADD90C2925F78E003FEBA3 /* Config */,
 				11ADD8D92925F6A7003FEBA3 /* AppDelegate.swift */,
 				11ADD8DB2925F6A7003FEBA3 /* SceneDelegate.swift */,
 				11ADD8DD2925F6A7003FEBA3 /* ViewController.swift */,
@@ -126,6 +137,9 @@
 				11ADD8E72925F6AA003FEBA3 /* LaunchScreen.storyboard */,
 				11ADD8EA2925F6AA003FEBA3 /* Info.plist */,
 				11ADD8E22925F6A7003FEBA3 /* Flixpedia.xcdatamodeld */,
+				11ADD90E29260562003FEBA3 /* AppConstants.swift */,
+				11B9F982292643F200C65F6E /* MovieTableViewCell.swift */,
+				11B9F983292643F200C65F6E /* MovieTableViewCell.xib */,
 			);
 			path = Flixpedia;
 			sourceTree = "<group>";
@@ -145,6 +159,30 @@
 				11ADD8FF2925F6AB003FEBA3 /* FlixpediaUITestsLaunchTests.swift */,
 			);
 			path = FlixpediaUITests;
+			sourceTree = "<group>";
+		};
+		11ADD90C2925F78E003FEBA3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11ADD90D2925F7B5003FEBA3 /* Flixpedia.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11B9F97E29263F9F00C65F6E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11B9F97F29263FA800C65F6E /* Response */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		11B9F97F29263FA800C65F6E /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				11B9F98029263FC700C65F6E /* MovieListResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		8F1C4660FB8FA141FEB8B930 /* Pods */ = {
@@ -279,6 +317,7 @@
 			files = (
 				11ADD8E92925F6AA003FEBA3 /* LaunchScreen.storyboard in Resources */,
 				11ADD8E62925F6AA003FEBA3 /* Assets.xcassets in Resources */,
+				11B9F985292643F200C65F6E /* MovieTableViewCell.xib in Resources */,
 				11ADD8E12925F6A7003FEBA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,8 +414,11 @@
 			files = (
 				11ADD8E42925F6A7003FEBA3 /* Flixpedia.xcdatamodeld in Sources */,
 				11ADD8DE2925F6A7003FEBA3 /* ViewController.swift in Sources */,
+				11B9F984292643F200C65F6E /* MovieTableViewCell.swift in Sources */,
+				11B9F98129263FC700C65F6E /* MovieListResponse.swift in Sources */,
 				11ADD8DA2925F6A7003FEBA3 /* AppDelegate.swift in Sources */,
 				11ADD8DC2925F6A7003FEBA3 /* SceneDelegate.swift in Sources */,
+				11ADD90F29260562003FEBA3 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +611,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zinlinphyo.flixpedia;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zinlinphyo.flixpedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -598,7 +640,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.zinlinphyo.flixpedia;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.zinlinphyo.flixpedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
