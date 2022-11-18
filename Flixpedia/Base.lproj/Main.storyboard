@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HOo-eM-yTK">
-                                <rect key="frame" x="0.0" y="103" width="414" height="793"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="801"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="rOd-1B-QPH"/>
@@ -59,7 +59,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pM2-gB-fRh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,7 +68,7 @@
                             <constraint firstAttribute="bottom" secondItem="HOo-eM-yTK" secondAttribute="bottom" id="0Mt-Mq-o7H"/>
                             <constraint firstItem="HOo-eM-yTK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eeu-RJ-dBt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HOo-eM-yTK" secondAttribute="trailing" id="MSG-kW-Ot0"/>
-                            <constraint firstItem="HOo-eM-yTK" firstAttribute="top" secondItem="pM2-gB-fRh" secondAttribute="bottom" constant="8" id="qYr-Sn-NTy"/>
+                            <constraint firstItem="HOo-eM-yTK" firstAttribute="top" secondItem="pM2-gB-fRh" secondAttribute="bottom" id="qYr-Sn-NTy"/>
                             <constraint firstItem="pM2-gB-fRh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vQ0-HI-T9X"/>
                             <constraint firstItem="pM2-gB-fRh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="weW-ny-vwo"/>
                             <constraint firstItem="pM2-gB-fRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zzi-hN-d0o"/>
@@ -78,6 +78,7 @@
                     <navigationItem key="navigationItem" id="na2-hU-u7Z"/>
                     <connections>
                         <outlet property="movieTableView" destination="HOo-eM-yTK" id="Uj9-6N-IgP"/>
+                        <outlet property="searchBar" destination="pM2-gB-fRh" id="cCF-Wp-oJs"/>
                         <segue destination="AEM-JK-TrQ" kind="show" identifier="showDetails" id="nWt-6X-I2u"/>
                     </connections>
                 </viewController>
@@ -124,7 +125,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29J-xH-MQE">
-                                <rect key="frame" x="16" y="418" width="382" height="428"/>
+                                <rect key="frame" x="16" y="418" width="382" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="0di-gZ-K2q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,7 +138,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="29J-xH-MQE" firstAttribute="top" secondItem="qOK-ug-D8O" secondAttribute="bottom" constant="16" id="2Ta-0k-tDE"/>
-                            <constraint firstItem="bN4-Jr-JzS" firstAttribute="bottom" secondItem="29J-xH-MQE" secondAttribute="bottom" constant="16" id="6rz-bB-aO0"/>
                             <constraint firstItem="bN4-Jr-JzS" firstAttribute="trailing" secondItem="qOK-ug-D8O" secondAttribute="trailing" constant="16" id="JO3-cd-mQf"/>
                             <constraint firstItem="bN4-Jr-JzS" firstAttribute="trailing" secondItem="29J-xH-MQE" secondAttribute="trailing" constant="16" id="R1T-Rc-EaB"/>
                             <constraint firstItem="bN4-Jr-JzS" firstAttribute="trailing" secondItem="8ae-Y0-umZ" secondAttribute="trailing" id="V9h-I1-eIl"/>
