@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 import ViewAnimator
 
-class ViewController: UIViewController {
+class MovieListViewController: UIViewController {
     
     @IBOutlet weak var movieTableView: UITableView!
     
@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     var dataList = [Movie]()
     var filteredData: [Movie]!
+    
+    var page : Int = 1
     
     private let animations = [AnimationType.vector(CGVector(dx: 0, dy: 50))]
 
@@ -28,28 +30,24 @@ class ViewController: UIViewController {
         
         movieTableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "movieCell")
         
-        AF.request(AppConstants.BaseURL + "movie/upcoming?api_key=" + AppConstants.ApiKey).responseJSON { response in
-            
-            switch response.result {
-            case .success:
-                guard let value = response.data else { return }
-                do {
-                    let result = try JSONDecoder().decode(MovieListResponse.self, from: value)
-                    DispatchQueue.main.async {
-                        self.dataList = result.results
-                        self.filteredData = self.dataList
-                        self.movieTableView.reloadData()
-                        UIView.animate(views: self.movieTableView.visibleCells, animations: self.animations, completion: {})
-                    }
-                } catch {
-                    print("error")
+        fetchData()
+    }
+    
+    func fetchData() {
+        ApiManager.instance.fetchUpcomingMovieList(self.page) { result in
+            DispatchQueue.main.async {
+                
+                if self.page == 1 {
+                    self.dataList = result
+                    self.filteredData = self.dataList
+                } else {
+                    
                 }
-
-            case .failure(let error):
-                print(error.localizedDescription)
+                
+                self.movieTableView.reloadData()
+                UIView.animate(views: self.movieTableView.visibleCells, animations: self.animations, completion: {})
             }
         }
-        
     }
     
     // MARK: - Navigation
@@ -63,7 +61,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDataSource, UITableViewDelegate {
+extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredData.count
     }
@@ -83,9 +81,16 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        if position > (movieTableView.contentSize.height - 100 - scrollView.frame.size.height) {
+            
+        }
+    }
 }
 
-extension ViewController: UISearchBarDelegate {
+extension MovieListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if !searchText.isEmpty {
             filteredData = []
