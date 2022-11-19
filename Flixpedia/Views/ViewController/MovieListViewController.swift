@@ -15,6 +15,8 @@ class MovieListViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    private let viewModel = MovieListVM()
+    
     var dataList = [Movie]()
     var filteredData: [Movie]!
     
@@ -34,16 +36,16 @@ class MovieListViewController: UIViewController {
     }
     
     func fetchData() {
-        ApiManager.instance.fetchUpcomingMovieList(self.page) { result in
+        ApiManager.instance.fetchTrendingMovieList(self.page) { result in
             DispatchQueue.main.async {
-                
+
                 if self.page == 1 {
                     self.dataList = result
                     self.filteredData = self.dataList
                 } else {
-                    
+
                 }
-                
+
                 self.movieTableView.reloadData()
                 UIView.animate(views: self.movieTableView.visibleCells, animations: self.animations, completion: {})
             }
@@ -56,7 +58,7 @@ class MovieListViewController: UIViewController {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let vc = mainStoryboard.instantiateViewController(withIdentifier: "MovieDetailsViewController") as! MovieDetailsViewController
         vc.item = filteredData[index]
-        self.navigationController?.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -70,6 +72,7 @@ extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as! MovieTableViewCell
         cell.onBind(data: filteredData[indexPath.row])
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -82,31 +85,32 @@ extension MovieListViewController: UITableViewDataSource, UITableViewDelegate {
         return 150
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let position = scrollView.contentOffset.y
-        if position > (movieTableView.contentSize.height - 100 - scrollView.frame.size.height) {
-            
-        }
-    }
 }
 
 extension MovieListViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if !searchText.isEmpty {
-            filteredData = []
-            for movie in dataList {
-                if movie.originalTitle.lowercased().contains(searchText.lowercased()) {
-                    filteredData.append(movie)
-                }
-            }
-        } else {
-            filteredData = dataList
-        }
-        
-        self.movieTableView.reloadData()
-    }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.endEditing(true)
+        
+        guard let keyword = searchBar.searchTextField.text else { return }
+        
+        if keyword.isEmpty {
+            return
+        }
+        
+        ApiManager.instance.searchMovies(keyword: keyword, self.page) { result in
+            DispatchQueue.main.async {
+                
+                if self.page == 1 {
+                    self.dataList = result
+                    self.filteredData = self.dataList
+                } else {
+                    
+                }
+                
+                self.movieTableView.reloadData()
+                UIView.animate(views: self.movieTableView.visibleCells, animations: self.animations, completion: {})
+            }
+        }
     }
 }

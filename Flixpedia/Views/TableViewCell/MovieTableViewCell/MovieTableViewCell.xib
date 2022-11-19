@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,48 +17,72 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="163"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="013-aT-Ksx">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="013-aT-Ksx">
                         <rect key="frame" x="132" y="16" width="172" height="24"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="uFG-CS-ajs"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="uFG-CS-ajs"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Gl-3Zg">
-                        <rect key="frame" x="132" y="48" width="156" height="96"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-eA-p12">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flixpedia-icon" translatesAutoresizingMaskIntoConstraints="NO" id="7Th-eA-p12">
                         <rect key="frame" x="16" y="16" width="100" height="131"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="F3B-Sh-iLQ"/>
                         </constraints>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsup.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="py3-jm-PbL">
+                        <rect key="frame" x="132" y="47.5" width="24" height="24"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="VhD-9s-38E"/>
+                            <constraint firstAttribute="height" constant="24" id="tvW-30-ASj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YsL-DV-xDg">
+                        <rect key="frame" x="132" y="80" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-Gl-3Zg">
+                        <rect key="frame" x="164" y="50" width="24" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="top" secondItem="013-aT-Ksx" secondAttribute="bottom" constant="8" id="5mO-JA-e8A"/>
+                    <constraint firstItem="YsL-DV-xDg" firstAttribute="top" secondItem="py3-jm-PbL" secondAttribute="bottom" constant="8" id="0Ax-vx-UDP"/>
                     <constraint firstAttribute="bottom" secondItem="7Th-eA-p12" secondAttribute="bottom" constant="16" id="H77-Lp-dpr"/>
                     <constraint firstItem="013-aT-Ksx" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="JId-fI-yF1"/>
                     <constraint firstItem="7Th-eA-p12" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="TlL-gQ-Uav"/>
-                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="Z4d-mZ-UPk"/>
+                    <constraint firstItem="py3-jm-PbL" firstAttribute="top" secondItem="013-aT-Ksx" secondAttribute="bottom" constant="8" id="Yth-AN-1XO"/>
+                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="centerY" secondItem="py3-jm-PbL" secondAttribute="centerY" id="c8T-m9-j27"/>
                     <constraint firstItem="7Th-eA-p12" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="d42-DH-Cht"/>
                     <constraint firstAttribute="trailing" secondItem="013-aT-Ksx" secondAttribute="trailing" constant="16" id="gI6-5r-EZ2"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="TlB-Gl-3Zg" secondAttribute="bottom" constant="8" id="lin-tx-h8J"/>
+                    <constraint firstItem="YsL-DV-xDg" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="kr8-Zq-XFc"/>
+                    <constraint firstItem="py3-jm-PbL" firstAttribute="leading" secondItem="7Th-eA-p12" secondAttribute="trailing" constant="16" id="oGC-Kz-YJn"/>
                     <constraint firstItem="013-aT-Ksx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="syw-jd-4EA"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="TlB-Gl-3Zg" secondAttribute="trailing" constant="16" id="ziX-EK-Aft"/>
+                    <constraint firstItem="TlB-Gl-3Zg" firstAttribute="leading" secondItem="py3-jm-PbL" secondAttribute="trailing" constant="8" id="zls-v8-QdU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imgCover" destination="7Th-eA-p12" id="2Gn-3H-Yqf"/>
                 <outlet property="txtDesc" destination="TlB-Gl-3Zg" id="99b-wy-Z2s"/>
+                <outlet property="txtReleaseDate" destination="YsL-DV-xDg" id="wu7-yK-RYh"/>
                 <outlet property="txtTitle" destination="013-aT-Ksx" id="FAD-Xe-KI9"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="193.19196428571428"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Flixpedia-icon" width="512" height="512"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

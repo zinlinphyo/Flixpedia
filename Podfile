@@ -11,6 +11,7 @@ target 'Flixpedia' do
   pod 'Kingfisher', '~> 7.0'
   pod 'SnapKit', '~> 5.6.0'
   pod 'ViewAnimator'
+  pod "youtube-ios-player-helper"
 
   target 'FlixpediaTests' do
     inherit! :search_paths

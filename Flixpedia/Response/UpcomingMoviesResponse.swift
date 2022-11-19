@@ -8,10 +8,10 @@
 import Foundation
 
 // MARK: - MovieListResponse
-struct MovieListResponse: Codable {
+struct UpcomingMoviesResponse: Codable {
     let dates: Dates
     let page: Int
-    let results: [Movie]
+    let results: [UpcomingMovie]
     let totalPages, totalResults: Int
 
     enum CodingKeys: String, CodingKey {
@@ -27,7 +27,7 @@ struct Dates: Codable {
 }
 
 // MARK: - Result
-struct Movie: Codable {
+struct UpcomingMovie: Codable {
     let adult: Bool
     let backdropPath: String
     let genreIDS: [Int]
@@ -56,9 +56,3 @@ struct Movie: Codable {
     }
 }
 
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case es = "es"
-    case ja = "ja"
-    case ko = "ko"
-}

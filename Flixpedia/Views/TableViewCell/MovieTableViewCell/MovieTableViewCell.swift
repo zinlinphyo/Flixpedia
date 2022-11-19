@@ -12,6 +12,7 @@ class MovieTableViewCell: UITableViewCell {
     
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtDesc: UILabel!
+    @IBOutlet weak var txtReleaseDate: UILabel!
     @IBOutlet weak var imgCover: UIImageView!
 
     override func awakeFromNib() {
@@ -27,9 +28,10 @@ class MovieTableViewCell: UITableViewCell {
     
     func onBind(data: Movie) {
         txtTitle.text = data.originalTitle
-        txtDesc.text = data.overview
+        txtDesc.text = "\(round(10 * (data.voteAverage ?? 0)) / 10)"
+        txtReleaseDate.text = data.releaseDate
         
-        imgCover.kf.setImage(with: URL(string: "\(AppConstants.ImagePath)\(data.posterPath)")!)
+        imgCover.kf.setImage(with: URL(string: "\(AppConstants.PosterPath)\(data.posterPath ?? "")")!, placeholder: UIImage(named: "Flixpedia-icon"))
         
     }
 }
