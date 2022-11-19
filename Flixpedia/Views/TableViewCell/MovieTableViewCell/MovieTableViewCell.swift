@@ -29,7 +29,7 @@ class MovieTableViewCell: UITableViewCell {
         txtTitle.text = data.originalTitle
         txtDesc.text = data.overview
         
-        imgCover.kf.setImage(with: URL(string: "https://image.tmdb.org/t/p/w342/\(data.posterPath)")!)
+        imgCover.kf.setImage(with: URL(string: "\(AppConstants.ImagePath)\(data.posterPath)")!)
         
     }
 }
