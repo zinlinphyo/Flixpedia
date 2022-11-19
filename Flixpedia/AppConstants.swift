@@ -17,6 +17,7 @@ struct AppConstants {
     
     static let BaseURL = "https://api.themoviedb.org/3/"
     static let ApiKey = "9f04c49e56282d595c3ac1fa31ea742d"
+    static let ImagePath = "https://image.tmdb.org/t/p/w342/"
     
     enum StoryboardID {
         static let MAIN = "Main"
