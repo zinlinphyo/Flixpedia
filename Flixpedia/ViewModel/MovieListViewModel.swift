@@ -8,5 +8,7 @@
 import Foundation
 
 struct MovieListVM {
-    
+    init() {
+        
+    }
 }
