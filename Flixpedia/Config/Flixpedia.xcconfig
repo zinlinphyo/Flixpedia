@@ -9,4 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 BASEURL = https:/$()/api.themoviedb.org/3/
-APIKEY = 9f04c49e56282d595c3ac1fa31ea742d
+APIKEY = 

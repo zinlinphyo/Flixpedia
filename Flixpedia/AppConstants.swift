@@ -15,8 +15,8 @@ struct AppConstants {
 //    static let BaseURL = Bundle.main.infoDictionary?["BASEURL"] as! String
 //    static let ApiKey = Bundle.main.infoDictionary?["APIKEY"] as! String
     
+    static let ApiKey = "" // Add TMDB ApiKey
     static let BaseURL = "https://api.themoviedb.org/3/"
-    static let ApiKey = "9f04c49e56282d595c3ac1fa31ea742d"
     static let PosterPath = "https://image.tmdb.org/t/p/w342"
     static let BackdropPath = "https://image.tmdb.org/t/p/w780"
     
